@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotPlace</title>
+</head>
+<body>
+    <div class="hotplace__container">
+        <img class="hotplace__img" src="./핫플레이스__페이지.png" alt="">
+    </div>
+</body>
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .hotplace__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .hotplace__img {
+        width: 1200px;
+    }
+
+    @media screen and (max-width : 768px) {
+        
+        .hotplace__img {
+            max-width: 700px;
+        }
+
+    }
+</style>
+</html>

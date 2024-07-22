@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO</title>
+</head>
+<body>
+    <div class="uno__container">
+        <img class="uno__img" src="./우노__페이지.png" alt="">
+    </div>
+</body>
+<style>
+                * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .uno__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .uno__img {
+        width: 1200px;
+    }
+
+    @media screen and (max-width : 768px) {
+        
+        .uno__img {
+            max-width: 700px;
+        }
+
+    }
+</style>
+</html>

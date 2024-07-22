@@ -1,0 +1,95 @@
+/* Cover */
+.cover {
+    /* display none을 felx로 반드시 변경 */
+    display: none; 
+    align-items : center;
+    justify-content : center;
+    
+}
+
+.cover__image {
+    background-image: url("../사진/표지.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover__logo {
+    background-image: url('../사진/표지__logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    top: 15%;
+}
+
+.cover__line__horizon {
+    width: 15%;
+    height: 0.2%;
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 10rem;
+}
+
+.cover__line__vertical {
+    width: 0.1%;
+    height: 70%;
+    background-color: black;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.cover__writer {
+    position: absolute;
+    bottom: 10%;
+    font-family: notosans-light;
+    font-size: 2rem;
+    letter-spacing: 2rem;
+}
+
+.cover__circles__container__top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 5%;
+    right: 4.7%;
+}
+
+.cover__circles__container__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    position: absolute;
+    bottom: 10%;
+    left: 4.7%;
+}
+
+.cover__circles__bottom {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.cover__circles {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.cover__circle {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 100%;
+    background-color: black;
+}

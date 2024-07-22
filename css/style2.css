@@ -1,0 +1,403 @@
+:root { 
+    /* Color */
+    --primary--color : var(--color--yellow);
+    --second--color : var(--color--yellow--dark);
+    --font--color--dark : var(--color--black);
+    --font--color--light : var(--color--white);
+
+    --color--black : #121212;
+    --color--white : #ffffff;
+    --color--yellow : #FBBF24;
+    --color--yellow--dark : #BD9D2F;
+
+    /* Size */
+    --max-container : 1200px;
+
+    /* Font */
+    --font--designer : 'DESIGNER';
+    --font--notosans-light : 'notosans-light';
+    --font--notosans-regular : 'notosans-regular';
+}
+
+
+@font-face {
+    font-family: 'notosans-light';
+    src: url('../Font/NotoSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'notosans-regular';
+    src: url('../Font/NotoSansKR-Regular.otf');
+}
+
+
+@font-face {
+    font-family: 'DESIGNER';
+    src: url('../Font/DESIGNER.otf');
+}
+
+
+
+
+
+
+
+
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.max__container {
+    max-width: var(--max-container);
+    margin: auto;
+}
+
+
+/* Header */
+
+#header {
+    color: var(--font--color--light);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+}
+
+.header__logo {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DESIGNER';
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+}
+
+.header__logo_image {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 1px solid yellow;
+}
+
+.header__nav {
+    display: flex;
+    font-size: 1rem;
+    gap: 3rem;
+    font-family: var(--font--notosans-regular);
+}
+
+.header__nav__item {
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: var(--font--color--light);
+    font-family: var(--font--designer);
+    font-size: 1.5rem;
+}
+
+.header__nav__item.active {
+    border: 1px solid var(--primary--color);
+}
+
+.header__logo__title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/* Main */
+
+
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    background-image: url('/사진/parabolic-rectangle.png');
+    background-size: cover;
+}
+
+.home__container {
+    color: var(--font--color--light);
+    width: 100%;
+}
+
+.home__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0rem;
+    gap: 7rem;
+}
+
+.home__profile__image {
+    
+    position: relative;
+    bottom: -7rem;
+    z-index: 1;
+    transform: rotate(-10deg);
+    
+}
+
+.home__profile__img {
+    width: 450px;
+    border: 3px solid var(--primary--color);
+    border-radius: 100%;
+}
+
+.home__profile__text {
+    position: relative;
+}
+
+.home__profile__text__name {
+    font-size: 3rem;
+}
+
+.home__profile__text__description {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    white-space: nowrap;
+}
+
+.home__profile__text__contact {
+    background-color: var(--primary--color);
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 3rem;
+    position: absolute;
+    right: 50%;
+    color: var(--font--color--dark);
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+.home__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.home__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.home__divider .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+
+/* About */
+
+#about {
+    padding: 20rem 0;
+    position: relative;
+
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+
+.about__container {
+    font-family: var(--font--notosans-regular);
+    position: relative;
+}
+
+.about__main {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about__text {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.about__img {
+    width: 50rem;
+    position: relative;
+    transform: rotate(-10deg);
+    right: -400px;
+    top: 10px;
+    z-index: -1;
+}
+
+.about__index__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.about__index {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--font--color--light);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+}
+
+.about__index__img {
+    height: 100px;
+    transition: all 200ms ease-in-out;
+    
+}
+
+.about__index__img:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.about__index__title {
+    margin: 1rem 0;
+}
+
+.about__index__description {
+    min-width: 18rem;
+
+
+    
+
+}
+
+
+/* Skills */
+
+#skills {
+    background-size: cover;
+    margin-bottom: 100rem;
+    font-family: var(--font--notosans-regular);
+    padding: 10rem 0;
+    position: relative;
+    background-color: #f0f0f0;
+    
+}
+
+.skills__container2 {
+    margin-top: 10rem;
+}
+
+.skills__text {
+    display: flex;
+    justify-content: start;
+    
+    padding: 0 2rem;
+}
+
+.skills__grids {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.skills__index {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.skills__gauge {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color--black);
+}
+
+.skills__gauge__in {
+    height: 5px;
+    background-color: var(--primary--color);
+}
+
+.skills__file {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color--white);
+    color: var(--color--black);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    gap: 2rem;
+    box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+}
+
+.skills__file.adobe {
+    grid-row: span 2;
+}
+
+.skills__file.etc {
+    background-color: var(--primary--color);
+    color: var(--color--black);
+    .skills__gauge__in {
+        background-color: black;
+    }
+}
+
+.skills__divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.skills__divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 44px;
+}
+
+.skills__divider .shape-fill {
+    fill: #f0f0f0;
+}
