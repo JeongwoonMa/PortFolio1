@@ -21,23 +21,23 @@ html {
 }
 
 @font-face {
-    font-family: 'Montserrat-regular';
-    src: url('/Font/Montserrat-Regular.ttf');
+    font-family: 'Montserrat';
+    src: url('./Font/Montserrat-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'designer';
+    font-family: 'DESIGNER';
     src: url('/Font/DESIGNER.otf');
 }
 
 @font-face {
     font-family: 'montserrat-bold';
-    src: url('/Font/Montserrat-Bold.ttf');
+    src: url('./Font/Montserrat-Bold.ttf');
 }
 
 @font-face {
     font-family: 'montserrat-normal';
-    src: url('/Font/Montserrat-VariableFont_wght.ttf');
+    src: url('./Font/Montserrat-VariableFont_wght.ttf');
 }
 
 /* Aside */
@@ -625,7 +625,7 @@ font-style: normal;
 }
 
 .skills__script {
-    background: url('/사진/Skills.png') no-repeat center/contain;
+    background: url('./사진/Skills.png') no-repeat center/contain;
     position: absolute;
     width: 564.96px;
     height: 137px;
@@ -636,7 +636,7 @@ font-style: normal;
 }
 
 .skills__ellipse1 {
-    background: center/contain no-repeat url('/사진/Skills__ellipse.png');
+    background: center/contain no-repeat url('./사진/Skills__ellipse.png');
     position: absolute;
     width: 100%;
     height: 100%;
@@ -646,7 +646,7 @@ font-style: normal;
 }
 
 .skills__ellipse2 {
-    background: center/contain no-repeat url('/사진/Skills__ellipse2.png');
+    background: center/contain no-repeat url('./사진/Skills__ellipse2.png');
     position: absolute;
     width: 1157px;
     height: 1157px;
@@ -797,7 +797,7 @@ font-style: normal;
 }
 
 .contents__script {
-    background: center/contain no-repeat url('/사진/contents.png');
+    background: center/contain no-repeat url('./사진/contents.png');
 position: absolute;
 width: 664.55px;
 height: 137px;
