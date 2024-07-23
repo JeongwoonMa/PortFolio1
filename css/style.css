@@ -22,7 +22,7 @@ html {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./Font/Montserrat-Regular.ttf') format('truetype');
+    src: url('/Font/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -32,12 +32,12 @@ html {
 
 @font-face {
     font-family: 'montserrat-bold';
-    src: url('./Font/Montserrat-Bold.ttf') format('truetype');
+    src: url('/Font/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'montserrat-normal';
-    src: url('./Font/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('/Font/NotoSansKR-Regular.otf') format('truetype');
 
 }
 
@@ -144,7 +144,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 25px;
-    font-family: var(--font--designer);
+    font-family: 'DESIGNER';
     font-size: 2.5rem;
 }
 
