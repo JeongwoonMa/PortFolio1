@@ -44,7 +44,7 @@ const skills = document.querySelector('#skills');
 
 
 const skillsOptions = {
-    rootMargin : '-80% 0px 0px 0px',
+    rootMargin : '-50%',
     treshold : [0,1]
 };
 const skillsObserver = new IntersectionObserver(skillsCallback,skillsOptions);
@@ -78,7 +78,7 @@ function skillsCallback(skills) {
 const aboutContainer = document.querySelector('.about__index__container');
 
 const aboutOptions = {
-    rootMargin : '-30%',
+    rootMargin : '-50%',
     rootMarin : [0.5,1]
 };
 
