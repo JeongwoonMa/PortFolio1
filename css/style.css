@@ -22,22 +22,22 @@ html {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/Font/Montserrat-Regular.ttf') format('truetype');
+    src: url('./Font/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'DESIGNER';
-    src: url('/Font/DESIGNER.otf') format('truetype'); 
+    src: url('./Font/DESIGNER.otf') format('truetype'); 
 }
 
 @font-face {
     font-family: 'montserrat-bold';
-    src: url('/Font/Montserrat-Bold.ttf') format('truetype');
+    src: url('./Font/Montserrat-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'montserrat-normal';
-    src: url('/Font/NotoSansKR-Regular.otf') format('truetype');
+    src: url('./Font/NotoSansKR-Regular.otf') format('truetype');
 
 }
 
