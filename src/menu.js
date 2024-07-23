@@ -138,7 +138,6 @@ function sectionsCallback(entries) {
             const index = visible.indexOf(true)
             return index >= 0 ? index : 0;
         }
-        console.log(realSection);
 
         const scrollBtn = headerBtn[realSection];
         activeBtn.classList.remove('activebtn');
