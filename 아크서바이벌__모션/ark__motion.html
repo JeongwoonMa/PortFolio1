@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../사진/favicon.ico" type="image/x-icon">
     <title>Ark Survival : Motion</title>
 </head>
 <body>
     <div class="ark__container">
         <img class="ark__img" src="./아크서바이벌__모션.png" alt="">
         <div class="ark__video">
-            <video src="./Motion Design.mp4" autoplay="true" controls="true" width="1200px"></video>
+            <video src="./Motion Design.mp4"  controls="true" width="1200px"></video>
         </div>
     </div>
 </body>
@@ -35,11 +36,18 @@
     }
 
     @media screen and (max-width : 768px) {
-        
         .ark__img {
             max-width: 700px;
         }
-
     }
+    @media screen and (max-width : 375px) {
+        .ark__img {
+            max-width: 375px;
+        }
+        video {
+            width: 375px;
+        }
+    }
+    
 </style>
 </html>

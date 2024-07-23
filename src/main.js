@@ -44,7 +44,7 @@ const skills = document.querySelector('#skills');
 
 
 const skillsOptions = {
-    rootMargin : '-500px',
+    rootMargin : '-80%',
     treshold : [0,1]
 };
 const skillsObserver = new IntersectionObserver(skillsCallback,skillsOptions);
@@ -58,7 +58,7 @@ function skillsCallback(skills) {
         if(entries.isIntersecting) {
             skillsContainer.classList.add('fade-in')
         } else {
-            skillsContainer.classList.remove('fade-in')
+            // skillsContainer.classList.remove('fade-in')
         }
         skillsBar.forEach((a) => {
             a.classList.add('gauge__delete')
@@ -78,7 +78,8 @@ function skillsCallback(skills) {
 const aboutContainer = document.querySelector('.about__index__container');
 
 const aboutOptions = {
-    rootMargin : '-400px',
+    rootMargin : '-30%',
+    rootMarin : [0.5,1]
 };
 
 const aboutObserver = new IntersectionObserver(aboutCallback,aboutOptions);
@@ -90,8 +91,13 @@ function aboutCallback(entires) {
         if(a.isIntersecting) {
             a.target.classList.add('fade-in')
         } else {
-            a.target.classList.remove('fade-in')
+            // a.target.classList.remove('fade-in')
         }
+
+        
+        
+
+        
     })
 }
 
@@ -99,7 +105,7 @@ function aboutCallback(entires) {
 const contentContainer = document.querySelector('.contents__index__container');
 
 const contentOptions = {
-    rootMarin : '-600px',
+    rootMarin : '-80%',
     threshole : [0.5]
 };
 
@@ -111,8 +117,9 @@ function contentsCallback(aa) {
         if(b.isIntersecting) {
             b.target.classList.add('fade-in')
         } else {
-            b.target.classList.remove('fade-in')
+            // b.target.classList.remove('fade-in')
         }
+        
     })
 }
 
