@@ -1192,7 +1192,7 @@ opacity: 30%;
     }
 
     main {
-        height: 6100px;
+        height: 1000px;
         position: relative;
     }
 }
@@ -1426,5 +1426,9 @@ opacity: 30%;
 
     .contents__nav {
         margin-bottom: 2rem;
+    }
+
+    main {
+        height: 1000px;    
     }
 }
