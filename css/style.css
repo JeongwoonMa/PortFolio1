@@ -22,14 +22,14 @@ html {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./Font/Montserrat-Regular.ttf') format('truetype');
+    src: url('https://github.com/JeongwoonMa/Portfolio__final/blob/main/Font/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'DESIGNER';
     font-style: normal;
     font-weight: 400;
-    src: url('./Font/DESIGNER.otf') format('truetype'); 
+    src: url('https://github.com/JeongwoonMa/Portfolio__final/blob/main/Font/DESIGNER.otf') format('truetype'); 
 }
 
 @font-face {
