@@ -1280,14 +1280,15 @@ opacity: 30%;
         font-size: 0.8rem;
         width: 250px;
         white-space: normal;
-        position: absolute;
-        width: fit-content;
+        
+        
     }
 
     .home__introduce__button {
         a {
             font-size: 0.7rem;
         }
+        margin-top: 2rem;
     }
 
     #home__aside {
