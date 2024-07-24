@@ -27,6 +27,8 @@ html {
 
 @font-face {
     font-family: 'DESIGNER';
+    font-style: normal;
+    font-weight: 400;
     src: url('./Font/DESIGNER.otf') format('truetype'); 
 }
 
