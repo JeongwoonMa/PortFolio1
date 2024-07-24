@@ -851,6 +851,10 @@ z-index: -1;
 opacity: 30%;
 }
 
+.contents__nav__item {
+    color: var(--color--black);
+}
+
 /* FooterContainer */
 
 #footer__container {
