@@ -1281,6 +1281,7 @@ opacity: 30%;
         width: 250px;
         white-space: normal;
         position: absolute;
+        width: fit-content;
     }
 
     .home__introduce__button {
